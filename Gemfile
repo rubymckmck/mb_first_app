@@ -1,3 +1,4 @@
+#amended Gemfile by CM
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
@@ -18,11 +19,6 @@ end
 
 gem 'jquery-rails', '2.0.2'
 
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
+group :production do
+  gem 'pg', '0.12.2'
+end
